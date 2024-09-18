@@ -27,6 +27,7 @@ def faq_item(question, answer, id):
 
 def hero_section():
     return (
+        # TOP NAV BAR
         Header(
             Nav(
                 A(
@@ -38,12 +39,32 @@ def hero_section():
                     ),
                     href="#",
                 ),
+                # TODO: change "Tech Stack" to "meet us" or something
                 A(
-                    "Read docs",
-                    href="https://docs.ashreiwellness.com",
-                    **_blank,
-                    cls=f"bg-black text-white py-2 px-4 s-body rounded-[62.5rem] hover:bg-black/80 transition-colors duration-300 px-4 py-1 h-10 {center} justify-center",
+                    "Tech Stack",
+                    href="#stack-header",
+                    cls=f"text-black py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300",
                 ),
+                A(
+                    "How It Works",
+                    href="#how-it-works",
+                    cls=f"text-blac py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300",
+                ),
+                A(
+                    "FAQ",
+                    href="#faq",
+                    cls=f"text-blac py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300",
+                ),
+                # A(
+                #     "Read docs",
+                #     href="https://docs.ashreiwellness.com",
+                #     **_blank,
+                #     cls=f"bg-black text-white py-2 px-4 s-body rounded-[62.5rem] hover:bg-black/80 transition-colors duration-300 px-4 py-1 h-10 {center} justify-center",
+                # ),
+                
+                # Styling for the top navigation bar
+                #-----------------------------------#
+                # Applies padding, positioning, rounded corners, width, background, and border
                 cls=f"py-2 px-4 {between} items-center rounded-full w-full max-w-[400px] bg-white/50 backdrop-blur-lg border border-white/20",
             ),
             cls=f"fixed top-0 w-full left-0 p-4 {center} justify-center z-50",
@@ -63,6 +84,7 @@ def hero_section():
                     ),
                     cls=f"flex-1 {col} items-center justify-center gap-6 text-center w-full text-black",
                 ),
+                # NAV BAR IN FIRST SECTION
                 Div(
                     A(
                         "Learn more",
@@ -76,8 +98,20 @@ def hero_section():
                         "7min 30sec",
                         "QqZUzkPcU7A?si=lTtHuMT5HPC66-49",
                     ),
+                    A(
+                        "scroll to stack",
+                        href="#stack-header",
+                        cls=f"{bnset} m-body px-4 py-1 rounded-full bg-white text-black hover:bg-gray-100 transition-colors duration-300 h-[76px] w-full max-w-[350px] flex items-center justify-center",
+                    ),
+                    # TESTIMONIALS
+                    A(
+                        "what our community says",
+                        href="#testimonials",
+                        cls=f"{bnset} m-body px-4 py-1 rounded-full bg-white text-black hover:bg-gray-100 transition-colors duration-300 h-[76px] w-full max-w-[350px] flex items-center justify-center",
+                    ),
                     cls=f"flex-1 {center} justify-center content-center flex-wrap lg:gap-6 gap-4 m-body",
                 ),
+                # VIDEO PLAYER
                 video_player("Try now"),
                 cls=f"{col} flex-1 relative px-4 lg:px-16",
             ),
@@ -198,6 +232,7 @@ def stacked_cards_section():
                     H2(
                         "Ashrei Wellness scales up and scales down.",
                         cls="text-black heading-2",
+                        id="stack-header",
                     ),
                     P(
                         "Read more about our ",
@@ -286,6 +321,7 @@ def how_it_works_section():
                     msg,
                 ),
                 cls="max-w-3xl w-full mx-auto flex-col items-center text-center gap-6 mb-8 lg:mb-8",
+                id="how-it-works",
             ),
             Div(
                 *[benefit(title, content) for title, content in benefits],
@@ -315,6 +351,7 @@ def faq_section():
                 cls=f"{col} gap-4 {maxrem(32)} transition ease-out delay-[300ms]",
             ),
             cls=f"{section_base} w-full mx-auto lg:flex-row items-start max-w-7xl",
+            id="faq",
         ),
         bg_color="blue",
     )
@@ -337,6 +374,7 @@ def testimonials_section():
                 ]
             ),
             cls=f"{section_base} {maxrem(90)} mx-auto lg:flex-row items-start",
+            id="testimonials",
         ),
         bg_color="pink",
     )
