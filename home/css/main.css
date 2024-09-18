@@ -272,3 +272,7 @@
     transform: rotate(0deg);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

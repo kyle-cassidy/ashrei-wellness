@@ -43,17 +43,17 @@ def hero_section():
                 A(
                     "Tech Stack",
                     href="#stack-header",
-                    cls=f"text-black py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300",
+                    cls=f"text-black py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300 smooth-scroll",
                 ),
                 A(
                     "How It Works",
                     href="#how-it-works",
-                    cls=f"text-blac py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300",
+                    cls=f"text-black py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300 smooth-scroll",
                 ),
                 A(
                     "FAQ",
                     href="#faq",
-                    cls=f"text-blac py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300",
+                    cls=f"text-black py-2 px-4 s-body hover:text-gray-300 transition-colors duration-300 smooth-scroll",
                 ),
                 # A(
                 #     "Read docs",
@@ -481,6 +481,7 @@ scripts = (
     Script(src="js/togglePreview.js"),
     Script(src="js/codeOverflow.js"),
     Script(src="js/copyCode.js"),
+    Script(src="js/smoothScroll.js"),
 )
 
 from fastcore.xtras import timed_cache
