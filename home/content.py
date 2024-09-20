@@ -117,7 +117,6 @@ stacked = [
         "Build on solid foundations",
         "Ashrei Wellness stands on the shoulders of giants:",
         [
-            ("EBP Modalities", "ebp.svg", "https://ashreiwellness.com/foundation#sec1"),
             (
                 "Holistic Approaches",
                 "holistic.svg",

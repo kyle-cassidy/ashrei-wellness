@@ -302,5 +302,14 @@ Layout/Color Option 2:
 ￼
 ￼
 ￼
-￼
+holistic.svg HTTP/1.1" 404 Not Found
+interfaith.svg 
+community.svg 
+counseling.svg 
+education.svg 
+psychiatry.svg 
+career-guidance.svg 
+telehealth.svg 
+zoom.svg 
+in-person.svg ￼
 ￼
