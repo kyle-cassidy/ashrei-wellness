@@ -3,7 +3,7 @@ from home_components import *
 from content import *
 
 _blank = dict(target="_blank", rel="noopener noreferrer")
-description = "Holistic wellness solutions for a balanced life"
+description = "Ashrei Wellness LLC"
 
 
 def benefit(title, content):
@@ -61,9 +61,8 @@ def hero_section():
                 #     **_blank,
                 #     cls=f"bg-black text-white py-2 px-4 s-body rounded-[62.5rem] hover:bg-black/80 transition-colors duration-300 px-4 py-1 h-10 {center} justify-center",
                 # ),
-                
                 # Styling for the top navigation bar
-                #-----------------------------------#
+                # -----------------------------------#
                 # Applies padding, positioning, rounded corners, width, background, and border
                 cls=f"py-2 px-4 {between} items-center rounded-full w-full max-w-[400px] bg-white/50 backdrop-blur-lg border border-white/20",
             ),
