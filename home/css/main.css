@@ -154,12 +154,17 @@
 }
 
 .rotating-shapes {
-  animation: orbit 16s ease-in-out infinite;
+  animation: orbit 60s ease-in-out infinite;
   transform: translateZ(0);
 }
 
+.rotating-shapes > .fixed-center {
+  animation: none;
+  transform: none;
+}
+
 .rotating-shapes > * {
-  animation: rotate 16s ease-in-out infinite;
+  animation: rotate 60s ease-in-out infinite;
   transform-box: fill-box;
   transform-origin: center;
   transform: translateZ(0);
